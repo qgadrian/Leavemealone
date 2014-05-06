@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_settings"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/settings"
+        android:textSize="48sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/textTitleSettings"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vibrate"
+        android:id="@+id/checkBoxVibrate"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/checkBoxRing" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ringcalls"
+        android:id="@+id/checkBoxRing"
+        android:layout_gravity="center"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxVibrate"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/hours"
+        android:id="@+id/textHours"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/checkBoxRing"
+        android:layout_marginTop="48dp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:max="23"
+        android:layout_gravity="center"
+        android:layout_below="@+id/textHours"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="96dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/minutes"
+        android:id="@+id/textMinutes"
+        android:layout_above="@+id/seekBar2"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:max="59"
+        android:layout_gravity="center"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginBottom="23dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginLeft="96dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/seconds"
+        android:id="@+id/textSeconds"
+        android:layout_above="@+id/seekBar3"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar3"
+        android:max="59"
+        android:layout_gravity="center"
+        android:layout_below="@+id/seekBar2"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="96dp" />
+
+    <!--Seekbar labels-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/labelHours"
+        android:layout_below="@+id/textHours"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignBottom="@+id/seekBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/labelMinutes"
+        android:layout_alignBottom="@+id/seekBar2"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/labelSeconds"
+        android:layout_alignBottom="@+id/seekBar3"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mode"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:id="@+id/label_settings_mode"
+        android:layout_below="@+id/textTitleSettings"
+        android:layout_alignParentLeft="false"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:id="@+id/label_settings_time"
+        android:layout_below="@+id/checkBoxRing"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_below="@+id/seekBar3">-->
+
+
+    <!--<Button-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:text="Add preset"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:text="Add preset"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:id="@+id/button2"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:text="Add preset"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:id="@+id/button3"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:text="Add preset"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:id="@+id/button4"-->
+    <!--android:layout_weight="1"/>-->
+    <!--</LinearLayout>-->

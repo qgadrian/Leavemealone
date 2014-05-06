@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HoloCircularProgressBar">
+        <attr name="stroke_width" format="dimension" />
+        <attr name="progress" format="float"/>
+        <attr name="marker_progress" format="float"/>
+        <attr name="progress_color" format="color"/>
+        <attr name="progress_background_color" format="color"/>
+        <attr name="thumb_visible" format="boolean"/>
+        <attr name="marker_visible" format="boolean"/>
+        <attr name="android:gravity"/>
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="PresetButton">
+        <attr name="title" format="string" />
+        <attr name="time" format="string" />
+    </declare-styleable>
+
+</resources>

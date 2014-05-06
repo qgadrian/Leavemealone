@@ -1,0 +1,92 @@
+<PreferenceScreen>
+
+
+    <!--<PreferenceCategory android:title="@string/category_settings">-->
+
+        <!--<qg.adrian.guardianfree.SeekBarPreference-->
+            <!--android:defaultValue="50"-->
+            <!--android:title="@string/sensibility"-->
+            <!--android:key="seekBar_sensibility"-->
+            <!--android:max="100"-->
+            <!--android:indeterminate="false"-->
+            <!--android:progress="1"-->
+            <!--android:summary="@string/sett_description_sensibility"/>-->
+
+        <!--<ListPreference-->
+            <!--android:key="change_type_protection"-->
+            <!--android:title="@string/sett_protection"-->
+            <!--android:summary="@string/sett_description_protection"-->
+            <!--android:dialogTitle="@string/sett_title_protection"-->
+            <!--android:entries="@array/options"-->
+            <!--android:entryValues="@array/opts_values"-->
+            <!--android:defaultValue="0"/>-->
+
+        <!--<EditTextPreference-->
+            <!--android:key="change_password"-->
+            <!--android:title="@string/change_password"-->
+            <!--android:summary="@string/sett_description_change_pass"-->
+            <!--android:dialogTitle="@string/change_password"-->
+            <!--android:maxLength="4"-->
+            <!--android:inputType="numberPassword"/>-->
+
+        <!--<CheckBoxPreference-->
+            <!--android:key="activate_charging"-->
+            <!--android:title="@string/sett_active_charging"-->
+            <!--android:summary="@string/sett_description_charge_phone" />-->
+
+    <!--</PreferenceCategory>-->
+
+<!--&lt;!&ndash;Sound related&ndash;&gt;-->
+    <!--<PreferenceCategory android:title="@string/preference_category_title_sound">-->
+
+        <!--<qg.adrian.guardianfree.SeekBarPreference-->
+            <!--android:defaultValue="5"-->
+            <!--android:title="@string/sett_change_delay"-->
+            <!--guardian:unitsRight="get_seconds"-->
+            <!--guardian:min="0"-->
+            <!--android:key="seekBar_delay"-->
+            <!--android:max="30"-->
+            <!--android:indeterminate="false"-->
+            <!--android:progress="1"-->
+            <!--android:summary="@string/sett_description_delay"/>-->
+
+        <!--<ListPreference-->
+            <!--android:key="change_alarm_sound"-->
+            <!--android:title="@string/sett_sounds_title"-->
+            <!--android:summary="@string/sett_sounds_description"-->
+            <!--android:dialogTitle="@string/sett_sounds_title"-->
+            <!--android:entries="@array/sounds"-->
+            <!--android:entryValues="@array/sounds_values"-->
+            <!--android:defaultValue="0"/>-->
+
+    <!--</PreferenceCategory>-->
+
+<!--&lt;!&ndash;Premium related&ndash;&gt;-->
+    <!--<PreferenceCategory android:title="@string/preference_category_title_premium">-->
+
+        <!--<CheckBoxPreference-->
+            <!--android:key="lock_screen"-->
+            <!--android:title="@string/sett_title_lock_screen"-->
+            <!--android:summary="@string/sett_description_lock_screen" />-->
+
+        <!--<qg.adrian.leavemealone.SeekBarPreference-->
+            <!--android:defaultValue="3"-->
+            <!--android:title="@string/sett_alarm_delay_title"-->
+            <!--guardian:unitsRight="get_seconds"-->
+            <!--guardian:min="0"-->
+            <!--android:key="seekBar_alarm_delay"-->
+            <!--android:max="30"-->
+            <!--android:indeterminate="false"-->
+            <!--android:progress="1"-->
+            <!--android:summary="@string/sett_alarm_delay_desc"/>-->
+
+        <!--<Preference-->
+            <!--android:key="use_nfc"-->
+            <!--android:title="@string/sett_nfc_title"-->
+            <!--android:summary="@string/sett_nfc_desc"-->
+            <!--android:enabled="true">-->
+        <!--</Preference>-->
+
+    <!--</PreferenceCategory>-->
+
+</PreferenceScreen>

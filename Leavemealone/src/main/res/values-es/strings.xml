@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Silencia mi teléfono</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="settings">Ajustes</string>
+    <string name="vibrate">Permitir Vibración</string>
+    <string name="ringcalls">Permitir llamadas</string>
+    <string name="notifications">Permitir notificaciones</string>
+    <string name="hours">Horas</string>
+    <string name="minutes">Minutos</string>
+    <string name="seconds">Segundos</string>
+    <string name="start">Empezar</string>
+    <string name="stop">Stop</string>
+    <string name="countdown">Cuenta atrás</string>
+
+    <!--Tip-->
+    <string name="welcome">!Bienvenido!</string>
+    <string name="tip">Desliza para acceder a las opciones</string>
+
+    <!--Category titles-->
+    <!--5 - 7-->
+    <string name="mode">     Modo       </string>
+    <string name="time">     Tiempo       </string>
+
+    <!--Notification-->
+    <string name="tapCancel">Parar la cuenta atrás</string>
+    <string name="cancelTimer">Cancelar temporizador</string>
+</resources>

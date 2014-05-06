@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:presetbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/presets_layout"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.00001">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Presets"
+            android:fontFamily="sans-serif-light"
+            android:textSize="48sp"
+            android:textStyle="normal"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2">
+
+        <qg.adrian.leavemealone.PresetButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            presetbutton:title="aaaaa"
+            presetbutton:time="time"
+            android:id="@+id/preset1"
+            android:layout_weight="1"
+            android:background="@drawable/preset_button_border"
+            android:layout_margin="12dp"
+            android:singleLine="false" />
+
+        <qg.adrian.leavemealone.PresetButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            presetbutton:title="aaaaa"
+            presetbutton:time="time"
+            android:id="@+id/preset2"
+            android:layout_weight="1"
+            android:background="@drawable/preset_button_border"
+            android:layout_margin="12dp"
+            android:singleLine="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2">
+
+        <qg.adrian.leavemealone.PresetButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            presetbutton:title="aaaaa"
+            presetbutton:time="time"
+            android:id="@+id/preset2"
+            android:layout_weight="1"
+            android:background="@drawable/preset_button_border"
+            android:layout_margin="12dp"
+            android:singleLine="false" />
+
+        <qg.adrian.leavemealone.PresetButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            presetbutton:title="aaaaa"
+            presetbutton:time="time"
+            android:id="@+id/preset4"
+            android:layout_weight="1"
+            android:background="@drawable/preset_button_border"
+            android:layout_margin="12dp"
+            android:singleLine="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:id="@+id/linearLayout">
+
+        <qg.adrian.leavemealone.PresetButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            presetbutton:title="aaaaa"
+            presetbutton:time="time"
+            android:id="@+id/preset5"
+            android:layout_weight="1"
+            android:background="@drawable/preset_button_border"
+            android:layout_margin="12dp"
+            android:singleLine="false" />
+
+        <qg.adrian.leavemealone.PresetButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            presetbutton:title="aaaaa"
+            presetbutton:time="time"
+            android:id="@+id/preset6"
+            android:layout_weight="1"
+            android:background="@drawable/preset_button_border"
+            android:layout_margin="12dp"
+            android:singleLine="false" />
+    </LinearLayout>
+
+</LinearLayout>

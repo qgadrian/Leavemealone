@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">私の電話を黙ら</string>
+    <string name="action_settings">設定</string>
+
+    <string name="settings">設定</string>
+    <string name="vibrate">振動を許可する</string>
+    <string name="ringcalls">呼び出しを許可</string>
+    <string name="notifications">通知を許可する</string>
+    <string name="hours">アワー</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+    <string name="start">始める</string>
+    <string name="stop">止める</string>
+    <string name="countdown">カウントダウン</string>
+
+    <!--Tip-->
+    <string name="welcome">ようこそ！</string>
+    <string name="tip">設定を表示するためにスワイプ</string>
+
+    <!--Category titles-->
+    <string name="mode">     モード       </string>
+    <string name="time">     時間       </string>
+
+    <!--Notification-->
+    <string name="tapCancel">クロックを停止するときにタップ</string>
+    <string name="cancelTimer">タイマーを解除</string>
+</resources>

@@ -1,0 +1,298 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layoutR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/countdown"
+            android:textSize="48sp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/textTitleCountdown"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <qg.adrian.leavemealone.HoloCircularProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:stroke_width="5dp"
+            app:progress="0.4"
+            app:marker_progress="0.6"
+            app:progress_color="#ffff2f3b"
+            app:progress_background_color="#ffbaff00"
+            app:marker_visible="true"
+            app:thumb_visible="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="23sp"
+            android:background="@drawable/custom_start_button"
+            android:id="@+id/startButton"
+            android:layout_below="@+id/timeText"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="64sp"
+            android:text=""
+            android:id="@+id/timeText"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adUnitId="ca-app-pub-1723329902039385/2081672550"
+            ads:adSize="BANNER"
+            ads:loadAdOnCreate="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <!---->
+    <!--SETTINGS-->
+    <!---->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_settings"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/settings"
+            android:textSize="48sp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/textTitleSettings"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vibrate"
+            android:id="@+id/checkBoxVibrate"
+            android:layout_gravity="center"
+            android:layout_marginTop="250dp"
+            android:checked="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/checkBoxRing" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ringcalls"
+            android:id="@+id/checkBoxRing"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:layout_below="@+id/checkBoxVibrate"
+            android:layout_marginTop="23dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/hours"
+            android:id="@+id/textHours"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/checkBoxRing"
+            android:layout_marginTop="60dp"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:max="23"
+            android:layout_gravity="center"
+            android:layout_below="@+id/textHours"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="96dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/minutes"
+            android:id="@+id/textMinutes"
+            android:layout_above="@+id/seekBar2"
+            android:layout_centerHorizontal="true" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar2"
+            android:max="59"
+            android:layout_gravity="center"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="96dp"
+            android:layout_marginLeft="96dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/seconds"
+            android:id="@+id/textSeconds"
+            android:layout_above="@+id/seekBar3"
+            android:layout_centerHorizontal="true" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar3"
+            android:max="59"
+            android:layout_gravity="center"
+            android:layout_below="@+id/seekBar2"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="96dp" />
+
+        <!--Seekbar labels-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/labelHours"
+            android:layout_above="@+id/seekBar"
+            android:layout_alignLeft="@+id/labelMinutes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/labelMinutes"
+            android:layout_above="@+id/seekBar2"
+            android:layout_alignLeft="@+id/labelSeconds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/labelSeconds"
+            android:layout_marginLeft="49dp"
+            android:layout_above="@+id/seekBar3"
+            android:layout_toRightOf="@+id/textTitleSettings" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:id="@+id/label_settings_mode"
+            android:layout_below="@+id/textTitleSettings"
+            android:layout_alignParentLeft="false"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:id="@+id/label_settings_time"
+            android:layout_below="@+id/checkBoxRing"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:background="@drawable/ic_launcher"-->
+    <!--android:layout_gravity="center|bottom" />-->
+
+    <!--Tip layout-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeTip"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/welcome"
+            android:textSize="64sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/labelWelcome"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/tip"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:id="@+id/labelTip"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:importantForAccessibility="no"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/labelTip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/swipe_left"/>
+    </RelativeLayout>
+
+</FrameLayout>

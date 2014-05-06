@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Schweig still, mein Handy</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <string name="settings">Einstellungen</string>
+    <string name="vibrate">Erlauben vibrationen</string>
+    <string name="ringcalls">Erlauben ring anrufe</string>
+    <string name="notifications">Benachrichtigungen zulassen</string>
+    <string name="hours">Stunden</string>
+    <string name="minutes">Minuten</string>
+    <string name="seconds">Sekunden</string>
+    <string name="start">Starten</string>
+    <string name="stop">Stoppen</string>
+    <string name="countdown">Clock Countdown</string>
+
+    <!--Tip-->
+    <string name="welcome">Willkommen!</string>
+    <string name="tip">Swipe, um Einstellungen zeigen</string>
+
+    <!--Category titles-->
+    <string name="mode">     Modus       </string>
+    <string name="time">     Zeit       </string>
+
+    <!--Notification-->
+    <string name="tapCancel"> Tippen sie, um uhr zu stoppen</string>
+    <string name="cancelTimer">Abbrechen Timer</string>
+</resources>
