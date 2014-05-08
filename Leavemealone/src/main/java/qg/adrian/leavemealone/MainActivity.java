@@ -58,6 +58,12 @@ public class MainActivity extends Activity {
     private static int CANCEL_TIMER = 0;
 
     /**
+     * Receiver
+     */
+
+    BroadcastReceiver receiver;
+
+    /**
      * Animation and UI elements
      */
 
@@ -446,7 +452,7 @@ public class MainActivity extends Activity {
          */
         // Broadcast receiver for receive the pending intent filter, to know what's happening
         // Get action, and dismiss countdown
-        BroadcastReceiver receiver = new BroadcastReceiver() {
+        receiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
                 if (intent != null && intent.getAction().equalsIgnoreCase(CANCEL_COUNTDOWN)) {
@@ -604,16 +610,10 @@ public class MainActivity extends Activity {
                     AnimationUtils.loadAnimation(MainActivity.this, android.R.anim.fade_in);
             relativeLayout_1_main.startAnimation(animation);
             relativeLayout_1_main.setVisibility(View.VISIBLE);
-        } else if (layout_1_presets.getVisibility() == View.VISIBLE) {
-            Animation fadeInAnimation =
-                    AnimationUtils.loadAnimation(MainActivity.this, R.anim.slide_left_in);
-            layout_1_presets.startAnimation(fadeInAnimation);
-            layout_1_presets.setVisibility(View.GONE);
-            Animation animation =
-                    AnimationUtils.loadAnimation(MainActivity.this, android.R.anim.fade_in);
-            relativeLayout_1_main.startAnimation(animation);
-            relativeLayout_1_main.setVisibility(View.VISIBLE);
-        } else super.onBackPressed(); // If not back to main, make the default action
+        } else {
+            unregisterReceiver(receiver);
+            super.onBackPressed(); // If not back to main, make the default action
+        }
     }
 
 }
